@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+:root {
+    --grey: rgb(150, 147, 147);
+    --softblue: rgb(77, 192, 212);
+    --yellow: rgb(238, 238, 32);
+    --white: #fff;
+    --black: #333;
+}
+
+h2 {
+    padding: 10px;
+    font-size: 2.5em;
+    color: var(--grey);
+}
+
+p {
+    color: var(--grey);
+}
+
+button {
+    padding: 10px;
+    margin: 10px;
+    width: 150px;
+    background: var(--softblue);
+    border-radius: 20px;
+    border: none;
+    box-shadow: 1px 4px 8px 0 var(--grey);
+    color: var(--white);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.container,
+.header-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-box {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 250px;
+    background: var(--yellow);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 1px 4px 8px 0 var(--grey);
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.card-box:hover {
+    cursor: pointer;
+}
+
+.card-box.active {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-box .pokemons-name,
+.card-box .pokemons-type {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--black);
+}
